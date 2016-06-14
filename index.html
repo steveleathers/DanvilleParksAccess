@@ -46,47 +46,47 @@
       </svg> School Parks<br />
     <div id = 'layer-2'>
       <svg width="20" height="20">
-          <rect width="20" height="20" style="fill:rgba(230,96,0,0.6)" />
+          <rect width="20" height="20" style="fill:rgba(165,55,3,0.6)" />
         </svg> 1/4 mile Town Park Service Area<br />
     </div>
   <div id = 'layer-3'>
     <svg width="20" height="20">
-        <rect width="20" height="20" style="fill:rgba(230,96,0,0.6)" />
+        <rect width="20" height="20" style="fill:rgba(231,86,13,0.6)" />
       </svg> 1/2 mile Town Park Service Area<br />
   </div>
   <div id = 'layer-4'>
     <svg width="20" height="20">
-        <rect width="20" height="20" style="fill:rgba(252,183,98,0.6)" />
+        <rect width="20" height="20" style="fill:rgba(253,192,135,0.6)" />
       </svg> 1 mile Town Park Service Area<br />
   </div>
   <div id = 'layer-5'>
     <svg width="20" height="20">
-        <rect width="20" height="20" style="fill:rgba(230,96,0,0.6)" />
+        <rect width="20" height="20" style="fill:rgba(0,112,45,0.6)" />
       </svg> 1/4 mile School Park Service Area<br />
   </div>
   <div id = 'layer-6'>
     <svg width="20" height="20">
-        <rect width="20" height="20" style="fill:rgba(230,96,0,0.6)" />
+        <rect width="20" height="20" style="fill:rgba(115,196,116,0.6)" />
       </svg> 1/2 mile School Park Service Area<br />
   </div>
   <div id = 'layer-7'>
     <svg width="20" height="20">
-        <rect width="20" height="20" style="fill:rgba(252,183,98,0.6)" />
+        <rect width="20" height="20" style="fill:rgba(188,227,181,0.6)" />
       </svg> 1 mile School Park Service Area<br />
   </div>
   <div id = 'layer-8'>
     <svg width="20" height="20">
-        <rect width="20" height="20" style="fill:rgba(84,39,135,0.55)" />
+        <rect width="20" height="20" style="fill:rgba(85,39,144,0.6)" />
       </svg> 1/2 mile Regional Park Service Area<br />
   </div>
   <div id = 'layer-9'>
     <svg width="20" height="20">
-        <rect width="20" height="20" style="fill:rgba(152,141,194,0.6)" />
+        <rect width="20" height="20" style="fill:rgba(115,105,176,0.6)" />
       </svg> 1 mile Regional Park Service Area<br />
   </div>
   <div id = 'layer-10'>
     <svg width="20" height="20">
-        <rect width="20" height="20" style="fill:rgba(216,218,235,0.65)" />
+        <rect width="20" height="20" style="fill:rgba(204,202,227,0.6)" />
       </svg> 2 mile Regional Park Service Area<br />
   </div>
 </div>
@@ -140,6 +140,39 @@ $('#layer-4').click(function(e){
   }
   else {
     map.setLayoutProperty('1miletownparkserviceareas', 'visibility', 'visible');
+  }
+});
+$('#layer-5').click(function(e){
+  e.preventDefault();
+  e.stopPropagation();
+
+  if(map.getLayoutProperty('quartermileschoolparkserviceareas', 'visibility', 'visible')=='visible'){
+    map.setLayoutProperty('quartermileschoolparkserviceareas', 'visibility', 'none');
+  }
+  else {
+    map.setLayoutProperty('quartermileschoolparkserviceareas', 'visibility', 'visible');
+  }
+});
+$('#layer-6').click(function(e){
+  e.preventDefault();
+  e.stopPropagation();
+
+  if(map.getLayoutProperty('halfmileschoolparkserviceareas', 'visibility', 'visible')=='visible'){
+    map.setLayoutProperty('halfmileschoolparkserviceareas', 'visibility', 'none');
+  }
+  else {
+    map.setLayoutProperty('halfmileschoolparkserviceareas', 'visibility', 'visible');
+  }
+});
+$('#layer-7').click(function(e){
+  e.preventDefault();
+  e.stopPropagation();
+
+  if(map.getLayoutProperty('1mileschoolparkserviceareas', 'visibility', 'visible')=='visible'){
+    map.setLayoutProperty('1mileschoolparkserviceareas', 'visibility', 'none');
+  }
+  else {
+    map.setLayoutProperty('1mileschoolparkserviceareas', 'visibility', 'visible');
   }
 });
 $('#layer-8').click(function(e){
