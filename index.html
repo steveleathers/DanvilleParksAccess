@@ -43,7 +43,7 @@
     </svg> Regional Parks<br />
     <svg width="20" height="20">
         <rect width="20" height="20" style="fill:rgba(152,135,148,0.7)" />
-      </svg> School<br />
+      </svg> School Parks<br />
   <div id = 'layer-2'>
     <svg width="20" height="20">
         <rect width="20" height="20" style="fill:rgba(230,96,0,0.6)" />
@@ -57,17 +57,17 @@
   <div id = 'layer-4'>
     <svg width="20" height="20">
         <rect width="20" height="20" style="fill:rgba(84,39,135,0.55)" />
-      </svg> 1/2 mile County Park Service Area<br />
+      </svg> 1/2 mile Regional Park Service Area<br />
   </div>
   <div id = 'layer-5'>
     <svg width="20" height="20">
         <rect width="20" height="20" style="fill:rgba(152,141,194,0.6)" />
-      </svg> 1 mile County Park Service Area<br />
+      </svg> 1 mile Regional Park Service Area<br />
   </div>
   <div id = 'layer-6'>
     <svg width="20" height="20">
         <rect width="20" height="20" style="fill:rgba(216,218,235,0.65)" />
-      </svg> 2 mile County Park Service Area<br />
+      </svg> 2 mile Regional Park Service Area<br />
   </div>
 </div>
 <script>
@@ -112,40 +112,41 @@ $('#layer-3').click(function(e){
     map.setLayoutProperty('1 mile Park Service Areas', 'visibility', 'visible');
   }
 });
+*/
 $('#layer-4').click(function(e){
   e.preventDefault();
   e.stopPropagation();
 
-  if(map.getLayoutProperty('0.5 mile County Park Service Area', 'visibility', 'visible')=='visible'){
-    map.setLayoutProperty('0.5 mile County Park Service Area', 'visibility', 'none');
+  if(map.getLayoutProperty('halfmileregionalparkserviceareas', 'visibility', 'visible')=='visible'){
+    map.setLayoutProperty('halfmileregionalparkserviceareas', 'visibility', 'none');
   }
   else {
-    map.setLayoutProperty('0.5 mile County Park Service Area', 'visibility', 'visible');
+    map.setLayoutProperty('halfmileregionalparkserviceareas', 'visibility', 'visible');
   }
 });
 $('#layer-5').click(function(e){
   e.preventDefault();
   e.stopPropagation();
 
-  if(map.getLayoutProperty('1 mile County Park Service Areas', 'visibility', 'visible')=='visible'){
-    map.setLayoutProperty('1 mile County Park Service Areas', 'visibility', 'none');
+  if(map.getLayoutProperty('1mileregionalparkserviceareas', 'visibility', 'visible')=='visible'){
+    map.setLayoutProperty('1mileregionalparkserviceareas', 'visibility', 'none');
   }
   else {
-    map.setLayoutProperty('1 mile County Park Service Areas', 'visibility', 'visible');
+    map.setLayoutProperty('1mileregionalparkserviceareas', 'visibility', 'visible');
   }
 });
 $('#layer-6').click(function(e){
   e.preventDefault();
   e.stopPropagation();
 
-  if(map.getLayoutProperty('2 mile County Park Service Areas', 'visibility', 'visible')=='visible'){
-    map.setLayoutProperty('2 mile County Park Service Areas', 'visibility', 'none');
+  if(map.getLayoutProperty('2mileregionalparkserviceareas', 'visibility', 'visible')=='visible'){
+    map.setLayoutProperty('2mileregionalparkserviceareas', 'visibility', 'none');
   }
   else {
-    map.setLayoutProperty('2 mile County Park Service Areas', 'visibility', 'visible');
+    map.setLayoutProperty('2mileregionalparkserviceareas', 'visibility', 'visible');
   }
 });
-*/
+
 </script>
 </body>
 </html>
