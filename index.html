@@ -93,22 +93,22 @@ $('#layer-2').click(function(e){
   e.preventDefault();
   e.stopPropagation();
 
-  if(map.getLayoutProperty('0.5 mile Park Service Areas', 'visibility', 'visible')=='visible'){
-    map.setLayoutProperty('0.5 mile Park Service Areas', 'visibility', 'none');
+  if(map.getLayoutProperty('halfmiletownparkserviceareas', 'visibility', 'visible')=='visible'){
+    map.setLayoutProperty('halfmiletownparkserviceareas', 'visibility', 'none');
   }
   else {
-    map.setLayoutProperty('0.5 mile Park Service Areas', 'visibility', 'visible');
+    map.setLayoutProperty('halfmiletownparkserviceareas', 'visibility', 'visible');
   }
 });
 $('#layer-3').click(function(e){
   e.preventDefault();
   e.stopPropagation();
 
-  if(map.getLayoutProperty('1 mile Park Service Areas', 'visibility', 'visible')=='visible'){
-    map.setLayoutProperty('1 mile Park Service Areas', 'visibility', 'none');
+  if(map.getLayoutProperty('1miletownparkserviceareas', 'visibility', 'visible')=='visible'){
+    map.setLayoutProperty('1miletownparkserviceareas', 'visibility', 'none');
   }
   else {
-    map.setLayoutProperty('1 mile Park Service Areas', 'visibility', 'visible');
+    map.setLayoutProperty('1miletownparkserviceareas', 'visibility', 'visible');
   }
 });
 $('#layer-4').click(function(e){
