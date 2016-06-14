@@ -89,6 +89,9 @@
         <rect width="20" height="20" style="fill:rgba(204,202,227,0.6)" />
       </svg> 2 mile Regional Park Service Area<br />
   </div>
+  <div id = 'layer-11'>
+    <img src="bg-icon.png" width="20" height="20"> Background<br />
+  </div>
 </div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoibWlnY29tIiwiYSI6ImNrUllYc3MifQ.isgDkadcGHvdQKkSC1ohfQ';
@@ -206,6 +209,17 @@ $('#layer-10').click(function(e){
   }
   else {
     map.setLayoutProperty('2mileregionalparkserviceareas', 'visibility', 'visible');
+  }
+});
+$('#layer-11').click(function(e){
+  e.preventDefault();
+  e.stopPropagation();
+
+  if(map.getLayoutProperty('background', 'visibility', 'visible')=='visible'){
+    map.setLayoutProperty('background', 'visibility', 'none');
+  }
+  else {
+    map.setLayoutProperty('background', 'visibility', 'visible');
   }
 });
 
