@@ -31,7 +31,7 @@
   <h5>Click on a layer to turn it on or off.</h5>
   <div id = 'layer-1'>
     <svg width="20" height="20">
-      <rect width="20" height="20" style="fill:rgba(255,255,255,0);stroke-width:2.5;stroke:rgba(0,0,0,1);stroke-dasharray:6, 3, 4, 3" />
+      <rect width="20" height="20" style="fill:rgba(255,255,255,0);stroke-width:2.5;stroke:rgba(43,121,181,1);stroke-dasharray:6, 3, 4, 3" />
     </svg> Danville Town Boundary<br />
   </div>
 
@@ -79,11 +79,11 @@ $('#layer-1').click(function(e){
   e.preventDefault();
   e.stopPropagation();
 
-  if(map.getLayoutProperty('Danville Town Boundary', 'visibility', 'visible')=='visible'){
-    map.setLayoutProperty('Danville Town Boundary', 'visibility', 'none');
+  if(map.getLayoutProperty('danville_town_limits', 'visibility', 'visible')=='visible'){
+    map.setLayoutProperty('danville_town_limits', 'visibility', 'none');
   }
   else {
-    map.setLayoutProperty('Danville Town Boundary', 'visibility', 'visible');
+    map.setLayoutProperty('danville_town_limits', 'visibility', 'visible');
   }
 });
 $('#layer-2').click(function(e){
