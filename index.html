@@ -32,15 +32,15 @@
   <div id = 'layer-1'>
     <svg width="20" height="20">
       <rect width="20" height="20" style="fill:rgba(255,255,255,0);stroke-width:2.5;stroke:rgba(0,0,0,1);stroke-dasharray:6, 3, 4, 3" />
-    </svg> Morgan Hill City Boundary<br />
+    </svg> Danville Town Boundary<br />
   </div>
 
   <svg width="20" height="20">
     <rect width="20" height="20" style="fill:rgba(51,161,43,0.7)" />
-  </svg> City Parks<br />
+  </svg> Town Parks<br />
   <svg width="20" height="20">
-      <rect width="20" height="20" style="fill:rgba(177,222,138,0.6)" />
-    </svg> County Parks<br />
+      <rect width="20" height="20" style="fill:rgba(74,118,40,0.7)" />
+    </svg> Regional Parks<br />
   <div id = 'layer-2'>
     <svg width="20" height="20">
         <rect width="20" height="20" style="fill:rgba(230,96,0,0.6)" />
@@ -72,8 +72,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibWlnY29tIiwiYSI6ImNrUllYc3MifQ.isgDkadcGHvdQK
 var map = new mapboxgl.Map({
   container:'map',
   style: 'mapbox://styles/migcom/cih57o77s00129em3spt8ba0f',
-  center: [-121.655404, 37.131690],
-  zoom: 12.5
+  center: [-122.00, 37.82],
+  zoom: 13.3
 });
 $('#layer-1').click(function(e){
   e.preventDefault();
